@@ -1,0 +1,79 @@
+{
+  "data": {
+    "source_url": "https://raw.githubusercontent.com/selva86/datasets/5d788b9286864a80bc7b23703f372823bf6c600e/BostonHousing.csv",
+    "csv_sha256": "ab16ba38fbbbbcc69fe930aab1293104f1442c8279c130d9eba03dd864bef675",
+    "samples": 506,
+    "features": [
+      "CRIM",
+      "NOX",
+      "RM",
+      "DIS",
+      "PTRATIO",
+      "LSTAT"
+    ]
+  },
+  "boston_cv": {
+    "splits": 10,
+    "shuffle": true,
+    "seed": 0,
+    "lambda_min": 0.01,
+    "lambda_max": 6.0,
+    "candidate_count": 60,
+    "lasso_min": {
+      "lambda": 0.01,
+      "mse": 25.60861815952655,
+      "nonzero": 6
+    },
+    "lasso_one_se": {
+      "lambda": 0.7647022590092315,
+      "mse": 29.076500759088248,
+      "nonzero": 4
+    },
+    "ridge_min": {
+      "lambda": 0.02136048775274575,
+      "mse": 25.581150352602492
+    }
+  },
+  "synthetic": {
+    "train_samples": 80,
+    "test_samples": 400,
+    "features": 60,
+    "seed": 3,
+    "cv_seed": 0,
+    "sparse": {
+      "lam_l": 0.12016301131913908,
+      "lam_r": 0.03222014101800648,
+      "alpha_r": 2.577611281440518,
+      "mse_l": 1.221367361183824,
+      "mse_r": 5.325249587810393,
+      "hit": 5,
+      "extra": 10,
+      "n_true": 5
+    },
+    "dense": {
+      "lam_l": 0.01,
+      "lam_r": 0.013397749677790326,
+      "alpha_r": 1.0718199742232262,
+      "mse_l": 2.3399001494754823,
+      "mse_r": 2.625821855736411,
+      "hit": 56,
+      "extra": 0,
+      "n_true": 60
+    }
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.7",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.16.3"
+  },
+  "verification": {
+    "executed_code_cells": 10,
+    "figure_count": 9,
+    "ridge_and_lasso_library_agreement": true,
+    "lasso_kkt_checked": true,
+    "source_notebook_sha256": "8a9429266355814b69c83c5aa4fc6a628da5aa87cc1670e4fd706ae7b44d78f9"
+  }
+}
