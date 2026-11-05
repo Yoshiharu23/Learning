@@ -1,0 +1,20 @@
+{
+  "evaluation_source": "results/slot-attention/video_eval_summary.csv",
+  "training_source": "results/slot-attention/metrics.csv",
+  "evaluation": {
+    "video_count": 64,
+    "mean_video_swap_rate": 0.21477567304424386,
+    "total_swaps": 1915,
+    "total_transitions": 7958,
+    "pooled_swap_rate": 0.24063835134455894,
+    "mean_video_consistency_iou": 0.8712824359478325
+  },
+  "training": {
+    "logged_rows": 501,
+    "final_step": 50000,
+    "final_loss": 0.002295,
+    "final_recorded_ari": 0.046185,
+    "finite_validation_loss_rows": 0
+  },
+  "scope": "Recomputed from archived CSVs; no model training or inference performed."
+}
