@@ -124,6 +124,8 @@ SVDで擬似逆を作る例も、特異値の打ち切りに固定閾値を用�
 
 次は、ほぼ一次従属な特徴量や条件数の大きい行列で、`solve`・QR・SVDによる解の違いを比較し、回帰・Ridge・PCAへつなげたいと考えています。
 
+正則化への具体的なつながりは、[Ridge・Lassoの学習記録](../../machine-learning/regularization/README.md)にまとめています。固有値への`Nλ`の加算、係数の縮小、予測誤差の比較を扱っています。
+
 ## 参考資料
 
 - 鈴木讓 著『統計的機械学習の数理100問 with Python』共立出版、2020年。ISBN: 9784320125070。[出版社の書籍紹介](https://www.kyoritsu-pub.co.jp/book/b10003244.html)
