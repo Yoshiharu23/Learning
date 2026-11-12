@@ -4,6 +4,8 @@
 
 [実行結果付きNotebook](notebooks/perceptron_geometry_convergence_gradient_lab.ipynb)
 
+更新回数の上界が得られる過程を、前提条件から順に追えます。 [収束定理の証明](perceptron_convergence_theorem.md)
+
 ## 8つの実験
 
 | 実験 | 確認したこと |
