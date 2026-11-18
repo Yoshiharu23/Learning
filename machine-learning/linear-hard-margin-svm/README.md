@@ -44,3 +44,5 @@ python -m jupyter lab notebooks/linear_separable_svm_study_lab.ipynb
 カーネルを再起動し、上からすべてのセルを実行してください。学習データはセル内で定義しています。ハードマージンの制約は、データが厳密に線形分離可能な場合に実行可能です。
 
 更新則と分離可能な場合の収束については、関連する学習記録で扱っています。 [パーセプトロンの学習記録](../perceptron/README.md)
+
+ラグランジュ双対とKKT条件の計算は、2次元の射影問題でも確認できます。 [凸二次計画の実装と検証](../../mathematics/convex-quadratic-programming/README.md)
