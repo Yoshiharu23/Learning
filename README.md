@@ -7,6 +7,7 @@
 
 | テーマ | 取り組んだこと | 記録 |
 | --- | --- | --- |
+| 線形ソフトマージンSVM | スラック変数とヒンジ損失を確認し、主・双対問題を検算。400点で $C$ による境界とマージンの変化を比較。 | [概要・実験結果](machine-learning/soft-margin-svm/README.md) / [Notebook](machine-learning/soft-margin-svm/notebooks/soft_margin_svm_study_lab.ipynb) |
 | 凸二次計画 | 2次元の射影問題で主問題と双対問題を別々に解き、KKT条件と双対ギャップを検証。 | [概要・実験結果](mathematics/convex-quadratic-programming/README.md) / [Notebook](mathematics/convex-quadratic-programming/notebooks/convex_qp_kkt_duality_textbook_lab.ipynb) |
 | 線形ハードマージンSVM | 双対問題を解いて重みとバイアスを復元し、KKT条件とマージンを検証。 | [概要・実験結果](machine-learning/linear-hard-margin-svm/README.md) / [Notebook](machine-learning/linear-hard-margin-svm/notebooks/linear_separable_svm_study_lab.ipynb) |
 | パーセプトロンの幾何・更新則・収束 | 決定境界までの距離と勾配を検算。更新ごとの境界を描き、主形式と双対形式の一致を確認。 | [概要・実験結果](machine-learning/perceptron/README.md) / [Notebook](machine-learning/perceptron/notebooks/perceptron_geometry_convergence_gradient_lab.ipynb) |
