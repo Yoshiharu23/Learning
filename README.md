@@ -7,6 +7,7 @@
 
 | テーマ | 取り組んだこと | 記録 |
 | --- | --- | --- |
+| 線形ハードマージンSVM | 双対問題を解いて重みとバイアスを復元し、KKT条件とマージンを検証。 | [概要・実験結果](machine-learning/linear-hard-margin-svm/README.md) / [Notebook](machine-learning/linear-hard-margin-svm/notebooks/linear_separable_svm_study_lab.ipynb) |
 | パーセプトロンの幾何・更新則・収束 | 決定境界までの距離と勾配を検算。更新ごとの境界を描き、主形式と双対形式の一致を確認。 | [概要・実験結果](machine-learning/perceptron/README.md) / [Notebook](machine-learning/perceptron/notebooks/perceptron_geometry_convergence_gradient_lab.ipynb) |
 | 世界モデル2025：物体中心表現と意味・位置分離 | Slot Attention・SAVi型モデル・意味と位置を分けたモデルをPyTorchで実装。MOVi-Aで再構成と追跡を評価し、指標の定義と検証範囲を整理。 | [概要・実験結果](projects/world-model-2025/README.md) / [Notebook一覧](projects/world-model-2025/notebooks/) |
 | ポテンシャル関数法 | ガウス型ポテンシャル関数を用いた双対パーセプトロンをNumPyで実装。人工データで学習過程・決定境界・カーネル幅による挙動の違いを検証。 | [概要・実験結果](machine-learning/potential-function-dual-perceptron/README.md) / [Notebook](machine-learning/potential-function-dual-perceptron/notebooks/potential_function_dual_perceptron.ipynb) |

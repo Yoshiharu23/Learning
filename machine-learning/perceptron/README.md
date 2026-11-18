@@ -38,3 +38,5 @@ python -m jupyter lab notebooks/perceptron_geometry_convergence_gradient_lab.ipy
 データはセル内で定義しています。掲載時に未使用のインポートを外し、初期重みゼロでの境界や、境界上の点に対する更新の説明を補足しました。
 
 双対形式で内積をガウス型カーネルに置き換えた実験も収録しています。 [ポテンシャル関数法の学習記録](../potential-function-dual-perceptron/README.md)
+
+同じ学習データに対するパーセプトロンとSVMの境界を比較しています。 [線形ハードマージンSVMの学習記録](../linear-hard-margin-svm/README.md)
