@@ -46,3 +46,5 @@ python -m jupyter lab notebooks/linear_separable_svm_study_lab.ipynb
 更新則と分離可能な場合の収束については、関連する学習記録で扱っています。 [パーセプトロンの学習記録](../perceptron/README.md)
 
 ラグランジュ双対とKKT条件の計算は、2次元の射影問題でも確認できます。 [凸二次計画の実装と検証](../../mathematics/convex-quadratic-programming/README.md)
+
+線形分離できないデータに対し、スラック変数を加えてマージン違反を扱う方法を続編で実装しています。 [線形ソフトマージンSVMの実装と検証](../soft-margin-svm/README.md)
