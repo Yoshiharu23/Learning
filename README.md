@@ -7,6 +7,7 @@
 
 | テーマ | 取り組んだこと | 記録 |
 | --- | --- | --- |
+| 凸二次計画 | 2次元の射影問題で主問題と双対問題を別々に解き、KKT条件と双対ギャップを検証。 | [概要・実験結果](mathematics/convex-quadratic-programming/README.md) / [Notebook](mathematics/convex-quadratic-programming/notebooks/convex_qp_kkt_duality_textbook_lab.ipynb) |
 | 線形ハードマージンSVM | 双対問題を解いて重みとバイアスを復元し、KKT条件とマージンを検証。 | [概要・実験結果](machine-learning/linear-hard-margin-svm/README.md) / [Notebook](machine-learning/linear-hard-margin-svm/notebooks/linear_separable_svm_study_lab.ipynb) |
 | パーセプトロンの幾何・更新則・収束 | 決定境界までの距離と勾配を検算。更新ごとの境界を描き、主形式と双対形式の一致を確認。 | [概要・実験結果](machine-learning/perceptron/README.md) / [Notebook](machine-learning/perceptron/notebooks/perceptron_geometry_convergence_gradient_lab.ipynb) |
 | 世界モデル2025：物体中心表現と意味・位置分離 | Slot Attention・SAVi型モデル・意味と位置を分けたモデルをPyTorchで実装。MOVi-Aで再構成と追跡を評価し、指標の定義と検証範囲を整理。 | [概要・実験結果](projects/world-model-2025/README.md) / [Notebook一覧](projects/world-model-2025/notebooks/) |
@@ -16,7 +17,7 @@
 
 ## 分野別の記録
 
-- [数学](mathematics/README.md)：機械学習に必要な線形代数の実装と検算
+- [数学](mathematics/README.md)：線形代数と凸二次計画の実装・検算
 - [機械学習](machine-learning/README.md)：パーセプトロン、ポテンシャル関数法、Ridge・Lasso、物体中心表現と動画モデル
 - [プロジェクト](projects/README.md)：学習内容を組み合わせた実装・実験・評価
 - アルゴリズム・ソフトウェア開発：過去の学習内容を順次整理して追加予定
