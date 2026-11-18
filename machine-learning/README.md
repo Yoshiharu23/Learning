@@ -4,6 +4,7 @@
 
 | テーマ | 学習・検証の内容 | 記録 |
 | --- | --- | --- |
+| 線形ハードマージンSVM | 双対問題を解いて重みとバイアスを復元し、KKT条件とマージンを検証。 | [README](linear-hard-margin-svm/README.md) / [Notebook](linear-hard-margin-svm/notebooks/linear_separable_svm_study_lab.ipynb) |
 | パーセプトロンの幾何・更新則・収束 | 直交射影、内積、勾配と劣勾配、更新回数の上界、線形分離できない例、双対形式 | [README](perceptron/README.md) / [Notebook](perceptron/notebooks/perceptron_geometry_convergence_gradient_lab.ipynb) |
 | ポテンシャル関数法・双対パーセプトロン | ガウス型ポテンシャル関数、グラム行列、双対係数の更新、寄与ベクトル、決定境界、σの比較 | [README](potential-function-dual-perceptron/README.md) / [Notebook](potential-function-dual-perceptron/notebooks/potential_function_dual_perceptron.ipynb) |
 | 正則化：Ridge・Lasso | 固有値と縮小率、劣微分、ソフト閾値、座標降下法、係数パス、CV、人工データの予測・変数選択 | [README](regularization/README.md) / [Notebook](regularization/notebooks/ridge_lasso_regularization.ipynb) |
