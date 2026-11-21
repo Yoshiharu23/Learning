@@ -1,0 +1,57 @@
+:root { color-scheme: light; --ink: #193e36; --muted: #58665e; --line: #d8dfd4; --paper: #f5f5ed; --accent: #d6ef9a; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; line-height: 1.7; }
+main { max-width: 1180px; padding: 56px 36px 24px; margin: auto; }
+.hero { border-top: 4px solid var(--ink); padding-top: 22px; }
+.eyebrow, .section-label { font-family: monospace; font-size: 12px; letter-spacing: .12em; }
+h1 { margin: 12px 0 4px; font-size: clamp(48px, 8vw, 88px); line-height: 1.15; letter-spacing: -.055em; font-weight: 600; }
+h1 span { color: #668c32; }
+.hero > p { margin: 14px 0 0; font-size: 18px; }
+.hero .demo-note { color: var(--muted); font-size: 12px; margin-top: 16px; }
+.overview { display: flex; gap: 52px; margin-top: 32px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.overview > div { display: flex; align-items: baseline; gap: 12px; }
+.overview strong { font: 36px monospace; }
+.overview span { font-size: 12px; color: var(--muted); }
+.notice { min-height: 24px; margin: 12px 0; font-size: 13px; }
+.workspace { display: grid; grid-template-columns: 320px 1fr; gap: 44px; }
+.editor { align-self: start; background: #fff; border: 1px solid var(--line); padding: 25px; border-radius: 4px; }
+h2 { font-size: 22px; font-weight: 600; margin: 8px 0 22px; }
+fieldset { padding: 0; border: 0; margin: 0; min-width: 0; }
+label { display: block; font-size: 13px; margin-bottom: 6px; }
+label > span { display: inline-block; font-size: 11px; color: var(--muted); margin-left: 6px; }
+input, textarea, select { width: 100%; border: 1px solid #a7b7ac; border-radius: 3px; font: inherit; font-size: 14px; padding: 10px 12px; background: #fff; color: var(--ink); }
+textarea { resize: vertical; }
+fieldset input, fieldset textarea, fieldset select { margin-bottom: 20px; }
+button { cursor: pointer; border: 1px solid #acbcb0; border-radius: 3px; background: transparent; color: var(--ink); font: inherit; font-size: 12px; padding: 6px 12px; }
+button:hover { background: #edf1e7; }
+button:disabled { cursor: wait; opacity: .55; }
+:focus-visible { outline: 3px solid #537b26; outline-offset: 3px; }
+.primary { display: flex; width: 100%; justify-content: space-between; background: var(--ink); color: #fff; padding: 12px 14px; border-color: var(--ink); font-size: 14px; }
+.primary:hover { background: #285749; }
+.cancel { width: 100%; margin-top: 10px; }
+.list-heading { display: flex; align-items: baseline; justify-content: space-between; }
+.list-heading > span { font: 13px monospace; }
+.filters { display: grid; grid-template-columns: 1fr 150px; gap: 14px; margin-bottom: 22px; }
+.filters label { color: var(--muted); font-size: 12px; }
+ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.task { padding: 20px 22px; background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--ink); border-radius: 3px; }
+.task.completed { border-left-color: #8caa59; }
+.badge { display: inline-block; background: #e8eeeb; padding: 2px 8px; border-radius: 2px; font-size: 11px; }
+.badge.done { background: var(--accent); }
+h3 { margin: 10px 0 6px; font-size: 17px; font-weight: 600; overflow-wrap: anywhere; }
+.description { margin: 0; font-size: 13px; color: var(--muted); white-space: pre-wrap; overflow-wrap: anywhere; }
+.actions { display: flex; gap: 8px; margin-top: 18px; }
+.actions .delete { margin-left: auto; color: #934638; border-color: #d3b6ae; }
+.empty { padding: 42px 18px; border: 1px dashed #acbcb0; color: var(--muted); text-align: center; font-size: 14px; }
+.error { background: #fff2e8; border: 1px solid #c69a7c; padding: 12px; margin-top: 16px; font-size: 13px; }
+.error button { margin-left: 12px; }
+footer { margin-top: 52px; padding-top: 18px; border-top: 1px solid var(--line); font: 11px monospace; color: var(--muted); display: flex; justify-content: space-between; gap: 14px; }
+@media (max-width: 760px) {
+  main { padding: 28px 20px 20px; }
+  .workspace { grid-template-columns: 1fr; gap: 30px; }
+  .overview { gap: 22px; justify-content: space-between; }
+  .overview > div { display: grid; gap: 0; }
+  .overview strong { font-size: 30px; }
+  .filters { grid-template-columns: 1fr 125px; gap: 10px; }
+  footer { flex-direction: column; }
+}
