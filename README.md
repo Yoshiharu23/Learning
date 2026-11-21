@@ -19,6 +19,9 @@ Learning/
 │   ├── soft-margin-svm/                    # ソフトマージンSVM
 │   ├── regularization/                     # Ridge・Lasso
 │   └── ml-project-structure/               # MLプロジェクトの構成と開発の流れ
+├── software-development/                  # ソフトウェアの設計・実装・検証
+│   ├── README.md
+│   └── web-development/                   # Web開発の学習記録と公開用の小さなアプリ
 └── projects/                               # 学習内容を組み合わせたプロジェクト
     ├── README.md
     └── world-model-2025/                   # 物体中心表現・動画モデル
@@ -30,6 +33,7 @@ Learning/
 | --- | --- |
 | [mathematics/](mathematics/README.md) | 線形代数、凸二次計画など、機械学習を支える数学の実装と検算 |
 | [machine-learning/](machine-learning/README.md) | 学習アルゴリズムの導出・実装・実験と、MLプロジェクトの開発方法 |
+| [software-development/](software-development/README.md) | Webアプリケーションの設計・実装・テストと、動作を試せるサンプル |
 | [projects/](projects/README.md) | 複数の知識を組み合わせたモデルの実装・実験・評価 |
 
 ## テーマ内のファイル
@@ -44,6 +48,8 @@ Learning/
 | `requirements.txt` | 実行に必要なPythonライブラリ |
 | `results/` | 実験設定、評価値、集計結果 |
 | `scripts/` | 結果の集計などを行うスクリプト |
+| `demo/` | 学習した技術を小さな構成で試せるアプリケーション |
+| `docs/` | 設計の考え方や実装範囲の説明 |
 | その他のMarkdown | 定理の証明、再現手順、出典などの補足説明 |
 
 分野のREADMEから関心のあるテーマへ進み、テーマのREADMEで概要と結果を確認してからNotebookや補足資料を読む流れを想定しています。
