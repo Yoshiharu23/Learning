@@ -1,29 +1,49 @@
 # Learning
 
-数学・アルゴリズム・機械学習・ソフトウェア開発の学習記録です。
-各テーマについて、学んだ理論、実装や演習、検証結果、残っている課題をまとめていきます。
+数学・機械学習・ソフトウェア開発の学習記録です。分野ごとにテーマをまとめ、各テーマのREADMEから説明・実装・実験結果をたどれる構成にしています。
 
-## まず見てほしい記録
+## ディレクトリ構成
 
-| テーマ | 取り組んだこと | 記録 |
-| --- | --- | --- |
-| 線形ソフトマージンSVM | スラック変数とヒンジ損失を確認し、主・双対問題を検算。400点で $C$ による境界とマージンの変化を比較。 | [概要・実験結果](machine-learning/soft-margin-svm/README.md) / [Notebook](machine-learning/soft-margin-svm/notebooks/soft_margin_svm_study_lab.ipynb) |
-| 凸二次計画 | 2次元の射影問題で主問題と双対問題を別々に解き、KKT条件と双対ギャップを検証。 | [概要・実験結果](mathematics/convex-quadratic-programming/README.md) / [Notebook](mathematics/convex-quadratic-programming/notebooks/convex_qp_kkt_duality_textbook_lab.ipynb) |
-| 線形ハードマージンSVM | 双対問題を解いて重みとバイアスを復元し、KKT条件とマージンを検証。 | [概要・実験結果](machine-learning/linear-hard-margin-svm/README.md) / [Notebook](machine-learning/linear-hard-margin-svm/notebooks/linear_separable_svm_study_lab.ipynb) |
-| パーセプトロンの幾何・更新則・収束 | 決定境界までの距離と勾配を検算。更新ごとの境界を描き、主形式と双対形式の一致を確認。 | [概要・実験結果](machine-learning/perceptron/README.md) / [Notebook](machine-learning/perceptron/notebooks/perceptron_geometry_convergence_gradient_lab.ipynb) |
-| 世界モデル2025：物体中心表現と意味・位置分離 | Slot Attention・SAVi型モデル・意味と位置を分けたモデルをPyTorchで実装。MOVi-Aで再構成と追跡を評価し、指標の定義と検証範囲を整理。 | [概要・実験結果](projects/world-model-2025/README.md) / [Notebook一覧](projects/world-model-2025/notebooks/) |
-| ポテンシャル関数法 | ガウス型ポテンシャル関数を用いた双対パーセプトロンをNumPyで実装。人工データで学習過程・決定境界・カーネル幅による挙動の違いを検証。 | [概要・実験結果](machine-learning/potential-function-dual-perceptron/README.md) / [Notebook](machine-learning/potential-function-dual-perceptron/notebooks/potential_function_dual_perceptron.ipynb) |
-| 機械学習のための線形代数 | 掃き出し法・Gram–Schmidt法を実装。固有値・SVD・擬似逆を検算し、回帰・正則化につながる性質を可視化。 | [概要・検証結果](mathematics/linear-algebra/README.md) / [Notebook](mathematics/linear-algebra/notebooks/linear_algebra_for_machine_learning.ipynb) |
-| Ridge・Lassoの正則化 | Ridgeと座標降下法によるLassoを実装。係数パス・劣微分を可視化し、fold内標準化によるCVと人工データのテスト評価を実施。 | [概要・実験結果](machine-learning/regularization/README.md) / [Notebook](machine-learning/regularization/notebooks/ridge_lasso_regularization.ipynb) |
+```text
+Learning/
+├── README.md
+├── mathematics/                            # 数学の理論と数値計算
+│   ├── README.md
+│   ├── linear-algebra/                      # 線形代数
+│   └── convex-quadratic-programming/        # 凸二次計画・KKT条件・双対性
+├── machine-learning/                       # 機械学習の理論・実装・開発
+│   ├── README.md
+│   ├── perceptron/                         # パーセプトロン・収束定理
+│   ├── potential-function-dual-perceptron/  # ポテンシャル関数法
+│   ├── linear-hard-margin-svm/             # ハードマージンSVM
+│   ├── soft-margin-svm/                    # ソフトマージンSVM
+│   ├── regularization/                     # Ridge・Lasso
+│   └── ml-project-structure/               # MLプロジェクトの構成と開発の流れ
+└── projects/                               # 学習内容を組み合わせたプロジェクト
+    ├── README.md
+    └── world-model-2025/                   # 物体中心表現・動画モデル
+```
 
-## 分野別の記録
+## 分野ごとの入口
 
-- [数学](mathematics/README.md)：線形代数と凸二次計画の実装・検算
-- [機械学習](machine-learning/README.md)：パーセプトロン、ポテンシャル関数法、Ridge・Lasso、物体中心表現と動画モデル
-- [プロジェクト](projects/README.md)：学習内容を組み合わせた実装・実験・評価
-- アルゴリズム・ソフトウェア開発：過去の学習内容を順次整理して追加予定
+| ディレクトリ | 内容 |
+| --- | --- |
+| [mathematics/](mathematics/README.md) | 線形代数、凸二次計画など、機械学習を支える数学の実装と検算 |
+| [machine-learning/](machine-learning/README.md) | 学習アルゴリズムの導出・実装・実験と、MLプロジェクトの開発方法 |
+| [projects/](projects/README.md) | 複数の知識を組み合わせたモデルの実装・実験・評価 |
 
-## 記録の読み方
+## テーマ内のファイル
 
-各テーマのREADMEに目的・結果・考察をまとめ、Notebookに数式・実装・実験の詳細を載せています。
-実行環境と再現手順、参考資料も各テーマに記載します。
+各テーマでは、学習内容に応じて次のファイル・ディレクトリを置いています。
+
+| ファイル・ディレクトリ | 役割 |
+| --- | --- |
+| `README.md` | テーマの概要、学習内容、主な結果、実行方法、参考資料 |
+| `notebooks/` | 数式・コード・実験を順に確認できるJupyter Notebook |
+| `figures/` | 決定境界、学習履歴などの図や可視化 |
+| `requirements.txt` | 実行に必要なPythonライブラリ |
+| `results/` | 実験設定、評価値、集計結果 |
+| `scripts/` | 結果の集計などを行うスクリプト |
+| その他のMarkdown | 定理の証明、再現手順、出典などの補足説明 |
+
+分野のREADMEから関心のあるテーマへ進み、テーマのREADMEで概要と結果を確認してからNotebookや補足資料を読む流れを想定しています。
